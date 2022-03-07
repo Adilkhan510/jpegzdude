@@ -11,6 +11,7 @@ async function deploy() {
 
 // @ts-ignore
 async function sayHello(hello) {
+    // its not mutating state so this will not cause a transaction
     console.log("Say Hello:", await hello.hello());
 }
 

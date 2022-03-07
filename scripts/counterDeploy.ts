@@ -11,7 +11,7 @@ async function deploy() {
     const counter = await Contract.deploy();
     await counter.deployed(); 
 
-    console.log("Counter should be zero since we just deployed it ",counter)
+    // console.log("Counter should be zero since we just deployed it ",counter)
     //once deployed we will return the deployed contract.  
     return counter;
 }
@@ -19,7 +19,8 @@ async function deploy() {
 //@ts-ignore
 async function count(counter){
     // Mutate the state of the counter by 
-    console.log("counter should be +1 since we called the state mutating function", await counter.count())
+    await counter.incrementCount();
+    console.log("counter should be +1 since we called the state mutating function", await counter.getCount())
 }
 
 //When we deploy the counter, we will have access to the methods on the contract.
