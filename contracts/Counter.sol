@@ -20,6 +20,9 @@ contract Counter {
 
     // uint defaults to a 256 bit #
     uint counter;
+    //State transition notifiers
+    //Any clients that are connected will have the event pushed to them
+    event CounterInc(uint counter);
 
     // state mutating function
     function getCount() public view returns(uint32){
@@ -33,6 +36,9 @@ contract Counter {
         //Write state
         counter++;
         // console.log("Counter is now",counter);
+
+        //Let connected clients know of the event that occured. 
+        emit CounterInc(counter);
 
     }
 }

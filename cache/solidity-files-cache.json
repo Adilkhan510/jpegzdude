@@ -37,8 +37,8 @@
       ]
     },
     "C:\\Users\\KhanM\\Documents\\GitHub\\jpegzdude\\contracts\\Counter.sol": {
-      "lastModificationDate": 1646611898117,
-      "contentHash": "69172c0be6676c05a768c7d8df8cc4a1",
+      "lastModificationDate": 1646619896587,
+      "contentHash": "b7423decced8ade22dda05d74cd7a7ad",
       "sourceName": "contracts/Counter.sol",
       "solcConfig": {
         "version": "0.8.0",
