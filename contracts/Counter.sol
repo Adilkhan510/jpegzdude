@@ -19,13 +19,13 @@ contract Counter {
     // member on the contract called counter, it is a base type of 256int;
 
     // uint defaults to a 256 bit #
-    uint32 counter;
+    uint counter;
 
     // state mutating function
     function getCount() public view returns(uint32){
         //reads state
         //Use it to get the data out
-        return counter;
+        return uint32(counter);
 
     }
 
