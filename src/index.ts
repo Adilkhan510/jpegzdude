@@ -36,7 +36,7 @@ async function getContract() {
             "function incrementCount() public",
             "function getCount() public view returns (uint32)"
         ], // abi
-        provider
+        provider.getSigner()
     );
 
     console.log("We have done it, time to call");
